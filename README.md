@@ -4,4 +4,4 @@
 
 ## About
 
-A repository for testing [Ben Armintor's DBLA](https://github.com/barmintor/dbla) for the Digital Library of Tennessee's Service Hub.
+A repository for testing [DBLA](https://github.com/barmintor/dbla) for the Digital Library of Tennessee's Service Hub.
