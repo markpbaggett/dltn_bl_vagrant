@@ -14,4 +14,5 @@ Vagrant.configure(2) do |config|
 
   shared_dir = "/vagrant"
   config.vm.provision :shell, path: "./scripts/dbla.sh", :args => shared_dir, :privileged => false
+  config.vm.provision :shell, path: "./scripts/setup_dbla.sh", :args => shared_dir, :privileged => false
 end
