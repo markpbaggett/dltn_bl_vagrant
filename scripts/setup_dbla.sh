@@ -15,6 +15,10 @@ if [ ! -d /home/vagrant/search_app ]; then
     rails g dbla:install
     echo "Copying DPLA Credentials"
     cp /vagrant/config/dpla.yml config/
+    echo "Configure catalog controller"
+    cd /home/vagrant/search_app/app/controllers/
+    curl -L https://gist.githubusercontent.com/markpbaggett/4e769d80491e272e84d209a8e2c97b16/raw/2c5824f7098dbb907f88deb03b30a20c6d8ac9ff/catalog_controller.rb > catalog_controller.rb
+    rails s
 else
     echo "Blacklight already installed."
 fi
